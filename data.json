@@ -1,0 +1,47 @@
+[
+	{
+		"name": "kietasis diskas",
+		"price": "150",
+		"pic_url": "https://m.media-amazon.com/images/I/716rHNW0jxL.jpg",
+		"description": "Parduodami kietieji diskai. 14tb talpos. Išrašomos PVM sąskaitos faktūros - suteikiama garantija. Nusipirkti galite: https://rpc.lt/p/14tb-seagate-exos-x14-st14000nm0018/ 30vnt. 14tb Seagate Exos X14 Model: ST14000NM0018 Padaryti pilni surface test, darbo laikas 600-700 Dienų. - 150Eur/vnt. (6mėn. garantija)*** Nuolaidą taikoma perkant nuo 5 vnt. *** Siuntimas paštomatais +3 Eur",
+		"date_added": "date_added 1",
+		"city": "Kaunas",
+		"id": "1"
+	},
+	{
+		"name": "Oculus Quest 2 128gb",
+		"price": "300",
+		"pic_url": "https://baitukas.lt/wp-content/uploads/2021/08/6.jpg",
+		"description": "Parduodami virtualūs akiniai, mažai naudoti. Galime atvezti į Kauną, Marijampolę. Visa info telefonu.",
+		"date_added": "date_added 1",
+		"city": "Vilnius",
+		"id": "2"
+	},
+	{
+		"name": "Sony A9 body (Puikios būklės)",
+		"price": "2950",
+		"pic_url": "https://www.efoto.lt/files/cameras/sony_a9_1.jpg",
+		"description": "Sony A9 - šis fotoaparatas, kuriame nėra mechanizmų, pasižymi savo klasę pranokstančiomis charakteristikomis ir gerokai lenkia įprastus mechaninius SLR. Pavyzdžiui, šioje sistemoje yra visiškai neužtemdomas vaizdo ieškiklis, o įprastose sistemose galima tik pabandyti sutrumpinti užtemdymo laiką. Spartus, nevibruojantis, tylus užraktas su apsauga nuo iškraipymo išplečia fotografavimo aplinkybių intervalą, tuo tarpu mechaninės sistemos gali tik siekti mažesnės vibracijos ir tylesnio užrakto atleidimo garso. 9 nuolat seka judančius objektus ir užtikrina patikimą AF / AE, o tradiciniai SLR gali tik stengtis prilygti tokiam AF / AE charakteristikų patobulinimui. Be to, 9 vaizdo ieškiklis rodo ne tik objekto vaizdus, kaip įprastos sistemos, bet ir galutinį kadro vaizdą.",
+		"date_added": "date_added 1",
+		"city": "Vilnius",
+		"id": "3"
+	},
+	{
+		"name": "Foto įrangos kuprinė",
+		"price": "15",
+		"pic_url": "https://eadn-wc05-1926589.nxedge.io/cdn/pub/media/catalog/product/cache/2264c9e38777ed202d5c3170a063a3cf/1/_/1_5.jpg",
+		"description": "Foto įrangos kuprinė. Išmatavimai - 12x25x32 cm. (gylis,plotis, aukštis). Skyriai susideda pagal poreikį.",
+		"date_added": "date_added 1",
+		"city": "Kaunas",
+		"id": "4"
+	},
+	{
+		"name": "Smc Takumar 135mm f3,5",
+		"price": "15",
+		"pic_url": "https://i.ebayimg.com/images/g/NL0AAOSwo4ZjtXk1/s-l500.jpg",
+		"description": "Parduodamas tvarkingas švarus Super Multi Coated 135mm f3,5 objketyvas. Mylėtas, saugotas, minimaliai naudotas. Veiksmas Vilnius. Siunčiu į kitus miestus.",
+		"date_added": "date_added 1",
+		"city": "Klaipeda",
+		"id": "5"
+	}
+]
