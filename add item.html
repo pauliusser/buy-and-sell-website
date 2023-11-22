@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Eshop atsiskaitymas</title>
+		<link rel="stylesheet" href="./styles.css" />
+	</head>
+	<body>
+		<header></header>
+		<main>
+			<div class="page-wrapper">
+				<div class="input-wrapper">
+					<h2>Add item</h2>
+
+					<label for="img">Img</label>
+					<input type="text" name="img" id="img" placeholder="image url here" />
+
+					<label for="item-name">Item name</label>
+					<input type="text" name="item-name" id="item-name" placeholder="enter the item name" />
+
+					<label for="price">Price, EUR</label>
+					<input type="number" name="price" id="price" placeholder="enter the price" />
+
+					<label for="description">Description</label>
+					<textarea name="description" id="description" cols="30" rows="10" placeholder="Add a description"></textarea>
+
+					<label for="city">City</label>
+					<input list="cities" name="city" id="city" placeholder="City" />
+					<datalist id="cities">
+						<option value="Vilnius"></option>
+						<option value="Kaunas"></option>
+						<option value="Klaipėda"></option>
+					</datalist>
+					<br />
+					<button id="add-item" class="add-btn">Add Item</button>
+					<div id="message">success!</div>
+				</div>
+			</div>
+		</main>
+		<footer></footer>
+		<script type="module" src="./add item.js"></script>
+	</body>
+</html>

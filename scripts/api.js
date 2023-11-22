@@ -28,5 +28,14 @@ async function removeItem(itemId) {
 		console.log("error", err);
 	}
 }
+async function fetchOneItem(id) {
+	try {
+		const fetchedData = await fetch(`https://65552d2e63cafc694fe784d3.mockapi.io/item/${id}`);
+		const item = await fetchedData.json();
+		return item;
+	} catch (err) {
+		console.log("error", err);
+	}
+}
 
-export { fetchItems, postItem, removeItem };
+export { fetchItems, postItem, removeItem, fetchOneItem };

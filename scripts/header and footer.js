@@ -1,4 +1,4 @@
-export default function buildHeader() {
+function buildHeader() {
 	document.querySelector("header").innerHTML = `<div class="header-wrapper">
     <div class="logo">
         <img src="./img/logo.png" alt="logo" />
@@ -7,9 +7,9 @@ export default function buildHeader() {
     <nav class="nav-pc">
         <ul>
             <li>
-                <a href="#">Stuff for sale</a>
+                <a href="./index.html">Stuff for sale</a>
             </li>
-            <li><a href="#">Sel yours</a></li>
+            <li><a href="./add item.html">Sel yours</a></li>
         </ul>
         <svg class="shopping-cart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
             <path
@@ -30,3 +30,7 @@ export default function buildHeader() {
     </svg>
 </div>`;
 }
+function buildFooter() {
+	document.querySelector("footer").innerHTML = `<p>Buy&Sel &copy all rights reserved 2023</p>`;
+}
+export { buildHeader, buildFooter };
