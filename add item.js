@@ -7,7 +7,6 @@ buildFooter();
 const burgerBtn = document.getElementById("burger-btn");
 const burgerMenu = document.getElementById("burger-menu");
 burgerBtn.addEventListener("click", () => {
-	console.log("click");
 	burgerMenu.classList.toggle("burger-menu-active");
 });
 
@@ -16,7 +15,6 @@ const message = document.getElementById("message");
 message.style.display = "none";
 
 addBtn.addEventListener("click", () => {
-	// console.log("click");
 	const res = itemObjMaker();
 	if (typeof res != "object") {
 		message.style.display = "flex";
@@ -29,7 +27,6 @@ addBtn.addEventListener("click", () => {
 		message.style.backgroundColor = "green";
 		message.textContent = "success!";
 
-		// console.log("upload successfull");
 		setTimeout(() => {
 			window.location.replace("./index.html");
 		}, 3000);
@@ -75,7 +72,6 @@ function itemObjMaker() {
 	return itemObj;
 }
 async function uploaditemObj(itemObj) {
-	// console.log(itemObj);
 	try {
 		await fetch("https://65552d2e63cafc694fe784d3.mockapi.io/item/", {
 			method: "POST",

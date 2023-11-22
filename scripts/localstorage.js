@@ -41,9 +41,7 @@ function removeFromWishlist(itemToRemove) {
 function addToWishlist(itemToAdd) {
 	try {
 		const list = readWishlist();
-		console.log(list);
 		list.push(itemToAdd);
-		console.log(list);
 		storeWishlist(list);
 	} catch (err) {
 		console.log(err);

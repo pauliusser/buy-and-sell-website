@@ -15,11 +15,8 @@ buildFooter();
 const burgerBtn = document.getElementById("burger-btn");
 const burgerMenu = document.getElementById("burger-menu");
 burgerBtn.addEventListener("click", () => {
-	console.log("click");
 	burgerMenu.classList.toggle("burger-menu-active");
 });
-
-// formos objektai surandami ir idedami i kintamuosius
 
 async function firstCardDraw() {
 	wishListWrapper.innerHTML = "";

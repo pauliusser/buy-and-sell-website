@@ -10,7 +10,6 @@ buildFooter();
 const burgerBtn = document.getElementById("burger-btn");
 const burgerMenu = document.getElementById("burger-menu");
 burgerBtn.addEventListener("click", () => {
-	console.log("click");
 	burgerMenu.classList.toggle("burger-menu-active");
 });
 
@@ -43,7 +42,6 @@ async function buildElements() {
 	removeBtn.textContent = "X";
 	removeBtn.classList.add("remove-btn");
 	removeBtn.addEventListener("click", async () => {
-		console.log(item.id);
 		removeFromWishlist(Number(item.id));
 		updateWishlistCounter();
 

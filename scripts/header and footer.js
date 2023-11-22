@@ -54,13 +54,6 @@ function buildHeader() {
 	updateWishlistCounter();
 }
 
-// const burgerBtn = document.getElementById("burger-btn");
-// const burgerMenu = document.getElementById("burger-menu");
-// burgerBtn.addEventListener("click", () => {
-// 	console.log("click");
-// 	burgerMenu.classList.toggle("burger-menu-active");
-// });
-
 function updateWishlistCounter() {
 	const wishListCounter = document.getElementById("wish-list-counter");
 	wishListCounter.innerHTML = readWishlist().length;

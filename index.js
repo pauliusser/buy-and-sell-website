@@ -22,14 +22,12 @@ let itemsList = [];
 let wishList = readWishlist();
 
 buildHeader();
-console.log(wishList.length);
 firstDraw();
 buildFooter();
 
 const burgerBtn = document.getElementById("burger-btn");
 const burgerMenu = document.getElementById("burger-menu");
 burgerBtn.addEventListener("click", () => {
-	console.log("click");
 	burgerMenu.classList.toggle("burger-menu-active");
 });
 
@@ -67,17 +65,14 @@ function sortBy(sortingOption) {
 		case "default":
 			const sortedByHighPrice = itemsToSort.sort((a, b) => b.price - a.price);
 			itemsList = sortedByHighPrice;
-			// console.log(sortedByHighPrice);
 			return sortedByHighPrice;
 		case "price":
 			const sortedByLowPrice = itemsToSort.sort((a, b) => a.price - b.price);
 			itemsList = sortedByLowPrice;
-			// console.log(sortedByLowPrice);
 			return sortedByLowPrice;
 		case "date":
 			const sortedByDate = itemsToSort.sort((a, b) => b.date_added - a.date_added);
 			itemsList = sortedByDate;
-			// console.log(sortedByDate);
 			return sortedByDate;
 		case "name":
 			const sortedByName = itemsToSort.sort((a, b) => {
@@ -90,7 +85,6 @@ function sortBy(sortingOption) {
 				return 0;
 			});
 			itemsList = sortedByName;
-			// console.log(sortedByCity);
 			return sortedByName;
 		case "city":
 			const sortedByCity = itemsToSort.sort((a, b) => {
@@ -103,7 +97,6 @@ function sortBy(sortingOption) {
 				return 0;
 			});
 			itemsList = sortedByCity;
-			// console.log(sortedByCity);
 			return sortedByCity;
 	}
 }
@@ -112,9 +105,7 @@ async function buildCards(iList) {
 	iList.forEach((item, index) => {
 		const card = document.createElement("div");
 		card.classList.add("card");
-		card.addEventListener("click", () => {
-			console.log(item.id);
-		});
+		card.addEventListener("click", () => {});
 
 		function goToItem() {
 			localStorage.setItem("item_Id", item.id);
@@ -168,7 +159,6 @@ async function buildCards(iList) {
 		}
 
 		const itemIdNumber = Number(item.id);
-		// console.log(itemIdNumber);
 
 		const wishBtn = createHeartSVG();
 		if (wishList.some((i) => i === itemIdNumber)) {
@@ -184,9 +174,6 @@ async function buildCards(iList) {
 			} else {
 				addToWishlist(itemIdNumber);
 				wishList = readWishlist(); //store list localy
-				// wishList.push(itemIdNumber);
-				// console.log(index);
-				// storeWishlist(wishList);
 				updateWishlistCounter();
 				wishBtn.classList.add("heart-btn-active");
 			}

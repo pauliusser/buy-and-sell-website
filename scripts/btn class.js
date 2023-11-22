@@ -24,8 +24,6 @@ export default class Btn {
 		}
 	}
 	click() {
-		// console.log("click");
-		// console.log(Btn.buttonsList, Btn.filterBtns, Btn.sortBtns);
 		if (this.isClicked === false) {
 			Btn.resetAll(this.type);
 			this.filterAction(this.filterArg);
