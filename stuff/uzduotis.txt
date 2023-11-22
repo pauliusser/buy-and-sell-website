@@ -7,11 +7,15 @@ funkcijas, kintamieji pavadinti tikslingai.
 * Prieš pradedant kurt UI, susikurt wireframe per draw.io
 * Atlikus darbą jį sukelti į GitHub.
 
+----------padaryta-----------
+
 1.Susikurti servisą kuris saugos informaciją apie
 parduodamus daiktus.
 Informaciją kurią Turi turėti daiktas: id, pavadinimas,
 kaina, nuotraukos url, produkto aprašymas,
 pardavimo lokacija. https://mockapi.io/
+
+----------padaryta-----------
 
 2. Sukurti puslapį kuris atvaizduos visas prekes. Stiuliaus
 inspiracijos galite semtis iš skelbiu.lt.
@@ -22,11 +26,15 @@ didžiausios.
 Paspaudus ant prekės jus turite būti nukreipiamas i puslapį kur
 bus atvaizduojama prekė.
 
+----------padaryta-----------
+
 3. Sukurti puslapį kuris atvaizduos prekę detaliai. Puslapyje turi
 būti pateikiama visa prekės informaciją. Iš šio puslaip turi būti
 galimą ištrinti prekę. Po ištrinimo turi atsirasti užrašas, kuris
 informuos, kad prekė buvo pašalinta iš katalogo. Taip pat
 puslapyje turi būti mygtukas kuris gražins i visų prekių katalogą
+
+----------padaryta-----------
 
 4. Sukurti puslapį kuris atvaizduos formą kurioje galima bus
 pridėti naują prekę. Puslapis turi būti pasiekiamas iš pagrindinio

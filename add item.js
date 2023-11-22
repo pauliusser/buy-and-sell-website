@@ -4,6 +4,13 @@ import { buildHeader, buildFooter } from "./scripts/header and footer.js";
 buildHeader();
 buildFooter();
 
+const burgerBtn = document.getElementById("burger-btn");
+const burgerMenu = document.getElementById("burger-menu");
+burgerBtn.addEventListener("click", () => {
+	console.log("click");
+	burgerMenu.classList.toggle("burger-menu-active");
+});
+
 const addBtn = document.getElementById("add-item");
 const message = document.getElementById("message");
 message.style.display = "none";
