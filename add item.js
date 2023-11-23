@@ -1,5 +1,5 @@
 import { fetchItems, postItem, removeItem, fetchOneItem } from "./scripts/api.js";
-import { buildHeader, buildFooter } from "./scripts/header and footer.js";
+import { buildHeader, buildFooter } from "./scripts/elements.js";
 
 buildHeader();
 buildFooter();

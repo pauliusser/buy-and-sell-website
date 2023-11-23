@@ -1,5 +1,5 @@
 import { fetchItems, postItem, removeItem, fetchOneItem } from "./scripts/api.js";
-import { buildHeader, buildFooter, updateWishlistCounter } from "./scripts/header and footer.js";
+import { buildHeader, buildFooter, updateWishlistCounter } from "./scripts/elements.js";
 import { storeWishlist, readWishlist, clearWishlist, removeFromWishlist, addToWishlist } from "./scripts/localstorage.js";
 import Btn from "./scripts/btn class.js";
 
