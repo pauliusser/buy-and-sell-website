@@ -237,6 +237,11 @@ button {
 		background-color: var(--accent-color);
 	}
 }
+.contact-seller-btn {
+	color: var(--accent-color);
+	margin-top: 1rem;
+	font-weight: bolder;
+}
 .is-clicked {
 	color: var(--accent-color);
 	border: 1px inset var(--accent-color);

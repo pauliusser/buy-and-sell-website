@@ -28,7 +28,12 @@ async function buildElements() {
 	price.textContent = item.price + " €";
 
 	const details = document.createElement("h4");
-	details.textContent = `${item.date_added} ${item.city}`;
+	const numericDate = item.date_added;
+	const dateString = numericDate.toString();
+	const yyyy = dateString.slice(0, 4);
+	const mm = dateString.slice(4, 6);
+	const dd = dateString.slice(6, 8);
+	details.textContent = `${yyyy} ${mm} ${dd} • ${item.city}`;
 
 	const description = document.createElement("p");
 	description.textContent = item.description;
@@ -47,12 +52,19 @@ async function buildElements() {
 
 		localStorage.removeItem("item_Id");
 		await removeItem(id);
+		contactSeller.style.display = "none";
 		message.style.display = "flex";
 		message.style.backgroundColor = "red";
 		setTimeout(() => {
 			window.location.replace("./index.html");
 		}, 3000);
 	});
+	const contactSeller = document.createElement("button");
+	contactSeller.textContent = "Contact Seller";
+	contactSeller.classList.add("contact-seller-btn");
+	contactSeller.addEventListener("click", () => {
+		alert("this page is for demonstration purpose only");
+	});
 
-	itemWrapper.append(removeBtn, title, img, price, details, description, message);
+	itemWrapper.append(removeBtn, title, img, price, details, description, message, contactSeller);
 }

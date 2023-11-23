@@ -39,6 +39,7 @@ function itemObjMaker() {
 	const priceInput = document.getElementById("price").value;
 	const descriptionInput = document.getElementById("description").value;
 	const cityInput = document.getElementById("city").value;
+	const currentDate = getCurrentTimeString();
 
 	if (imgInput === "") {
 		return "Image url is missing!";
@@ -66,7 +67,7 @@ function itemObjMaker() {
 		price: priceInput,
 		pic_url: imgInput,
 		description: descriptionInput,
-		date_added: "2023 11 22",
+		date_added: currentDate,
 		city: cityInput,
 	};
 	return itemObj;
@@ -84,4 +85,18 @@ async function uploaditemObj(itemObj) {
 	} catch (err) {
 		console.log("error", err);
 	}
+}
+
+function getCurrentTimeString() {
+	const currentDate = new Date();
+
+	// Get year, month, and day components
+	const year = currentDate.getFullYear();
+	const month = (currentDate.getMonth() + 1).toString().padStart(2, "0"); // Add 1 because months are zero-based
+	const day = currentDate.getDate().toString().padStart(2, "0");
+
+	// Create the time string in the format "yyyy mm dd"
+	const timeString = `${year}${month}${day}`;
+
+	return timeString;
 }

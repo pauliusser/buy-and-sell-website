@@ -133,5 +133,68 @@
 		"date_added": "20230802",
 		"city": "Vilnius",
 		"id": "16"
+	},
+	{
+		"name": "iPhone 12 128gb",
+		"price": "390",
+		"pic_url": "https://skelbiu-img.dgn.lt/1_22_3804055060/iphone-12-128gb.jpg",
+		"description": "Parduodu išpakuotą, bet nenaudotą IPhone 12 128GB - juodas. Naujas, tik išpakuotas iPhone 12 128gb, labai patrauklia kaina.",
+		"date_added": "20231122",
+		"city": "Klaipėda",
+		"id": "17"
+	},
+	{
+		"name": "Nikon d3x su sigma 85mm 1.4 art",
+		"price": "899",
+		"pic_url": "https://skelbiu-img.dgn.lt/1_18_3803851856/nikon-d3x-su-sigma-85mm-1-4-art.jpg",
+		"description": "Nikon d3x su 21mpix Daug pralekes bet dar tarnaus manaj nemazai apie 300-400k Parduodu uz objektyvo kainą;) fotikas kaip ir dovana Savo laiku kainavo 30 000 lt kogero brangiausias foto aparatas tais laikais nes sudeta daug technologijų Kas supranta tas įvertins. Objektyvo stiklai švarus veikia gerai.",
+		"date_added": "20231122",
+		"city": "Klaipėda",
+		"id": "18"
+	},
+	{
+		"name": "Selfie lazda",
+		"price": "5",
+		"pic_url": "https://skelbiu-img.dgn.lt/1_22_3179677277/selfio-lazda.jpg",
+		"description": "Kaina sutartinė.Skambinti!Į sms ir komentarus neatsakau.",
+		"date_added": "20231122",
+		"city": "Kaunas",
+		"id": "19"
+	},
+	{
+		"name": "Juostinis fotoaparatas muilinė",
+		"price": "10",
+		"pic_url": "https://skelbiu-img.dgn.lt/1_18_3366418165/juostinis-fotoaparatas-muiline.jpg",
+		"description": "Veikiantis . Galima rinktis bet kurį.\nKaina už vienetą.",
+		"date_added": "20231122",
+		"city": "Kaunas",
+		"id": "20"
+	},
+	{
+		"name": "Trikojis Velbon Ex-640",
+		"price": "50",
+		"pic_url": "https://skelbiu-img.dgn.lt/1_22_3805701956/trikojis-velbon-ex-640.jpg",
+		"description": "Kaip naujas, labai mažai naudotas, su krepšiu. Svoris ~2 kg",
+		"date_added": "20231122",
+		"city": "Kaunas",
+		"id": "21"
+	},
+	{
+		"name": "Dažų storio matuoklis",
+		"price": "13",
+		"pic_url": "https://skelbiu-img.dgn.lt/1_22_3805720400/dazu-storio-matuoklis.jpg",
+		"description": "Dažų storio matuoklis. Naujas. Kaina 13 EUR. Galima siųsti paštu +2.5 EUR.",
+		"date_added": "20231122",
+		"city": "Kaunas",
+		"id": "22"
+	},
+	{
+		"name": "Elektros varikliai",
+		"price": "5",
+		"pic_url": "https://skelbiu-img.dgn.lt/1_22_2975211759/elektros-varikliai.jpg",
+		"description": "Elektros varikliai nuo kažkokio magnetofono. Parametrai ant foto.",
+		"date_added": "20231122",
+		"city": "Vilnius",
+		"id": "23"
 	}
 ]
