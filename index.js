@@ -40,11 +40,7 @@ async function fetchItemsList() {
 	const fetchedItems = await fetchItems();
 	return fetchedItems;
 }
-function buildFilteredBy(c) {
-	const filteredArr = itemsList.filter((item) => item.city === c);
-	cardWrapper.innerHTML = "";
-	buildCards(filteredArr);
-}
+// reikia pataisyti sita funkcija puslapi perpiesia du kartus
 function buildSortedBy(c) {
 	const sorteddArr = sortBy(c);
 	cardWrapper.innerHTML = "";
@@ -54,10 +50,22 @@ function buildSortedBy(c) {
 		buildFilteredBy(arg);
 	}
 }
-function redraw() {
-	const defaultSorted = sortBy("default");
+function buildFilteredBy(c) {
+	const filteredArr = itemsList.filter((item) => item.city === c);
 	cardWrapper.innerHTML = "";
-	buildCards(defaultSorted);
+	buildCards(filteredArr);
+}
+
+function redraw() {
+	// patikrina ar sortinimas neliko nuspaustas, jei liko perpiesia sortinta, jei neliko perpiesia default
+	if (Btn.sortBtns.some((btn) => btn.isClicked === true)) {
+		const arg = Btn.sortBtns.find((btn) => btn.isClicked === true).filterArg;
+		cardWrapper.innerHTML = "";
+		buildCards(sortBy(arg));
+	} else {
+		cardWrapper.innerHTML = "";
+		buildCards(sortBy("default"));
+	}
 }
 function sortBy(sortingOption) {
 	const itemsToSort = itemsList;
@@ -101,8 +109,9 @@ function sortBy(sortingOption) {
 	}
 }
 
-async function buildCards(iList) {
-	iList.forEach((item, index) => {
+async function buildCards(itmList) {
+	console.log("build");
+	itmList.forEach((item, index) => {
 		const card = document.createElement("div");
 		card.classList.add("card");
 		card.addEventListener("click", () => {});
