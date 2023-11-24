@@ -40,33 +40,69 @@ async function fetchItemsList() {
 	const fetchedItems = await fetchItems();
 	return fetchedItems;
 }
-// reikia pataisyti sita funkcija puslapi perpiesia du kartus
+
 function buildSortedBy(c) {
-	const sorteddArr = sortBy(c);
-	cardWrapper.innerHTML = "";
-	buildCards(sorteddArr);
+	let sortedArr = sortBy(c);
+
+	// Apply filtering if any filter button is clicked
 	if (Btn.filterBtns.some((btn) => btn.isClicked === true)) {
 		const arg = Btn.filterBtns.find((btn) => btn.isClicked === true).filterArg;
-		buildFilteredBy(arg);
+		sortedArr = sortedArr.filter((item) => item.city === arg);
 	}
+
+	cardWrapper.innerHTML = "";
+	buildCards(sortedArr);
 }
+
 function buildFilteredBy(c) {
 	const filteredArr = itemsList.filter((item) => item.city === c);
 	cardWrapper.innerHTML = "";
 	buildCards(filteredArr);
 }
 
+// function redraw() {
+// 	// patikrina ar sortinimas neliko nuspaustas, jei liko perpiesia sortinta, jei neliko perpiesia default
+// 	if (Btn.sortBtns.some((btn) => btn.isClicked === true)) {
+// 		const arg = Btn.sortBtns.find((btn) => btn.isClicked === true).filterArg;
+// 		cardWrapper.innerHTML = "";
+// 		buildCards(sortBy(arg));
+// 	} else {
+// 		cardWrapper.innerHTML = "";
+// 		buildCards(sortBy("default"));
+// 	}
+// }
+
 function redraw() {
-	// patikrina ar sortinimas neliko nuspaustas, jei liko perpiesia sortinta, jei neliko perpiesia default
-	if (Btn.sortBtns.some((btn) => btn.isClicked === true)) {
-		const arg = Btn.sortBtns.find((btn) => btn.isClicked === true).filterArg;
+	const sortBtn = Btn.sortBtns.find((btn) => btn.isClicked === true); //jei nuspaustas randa nuspausta sortBtn
+	const filterBtn = Btn.filterBtns.find((btn) => btn.isClicked === true); // jei nuspaustas randa nuspausta filterBtn
+
+	if (sortBtn && filterBtn) {
+		// jei abu nuspausti pirma isrusiuoja po to isfiltruoja
+		const sortArg = sortBtn.filterArg;
+		const filterArg = filterBtn.filterArg;
+		let sortedArr = sortBy(sortArg);
+		sortedArr = sortedArr.filter((item) => item.city === filterArg);
 		cardWrapper.innerHTML = "";
-		buildCards(sortBy(arg));
+		buildCards(sortedArr);
+	} else if (sortBtn) {
+		// tik sort nuspaustas
+		const sortArg = sortBtn.filterArg;
+		cardWrapper.innerHTML = "";
+		buildCards(sortBy(sortArg));
+	} else if (filterBtn) {
+		// tik filter nuspaustas
+		const sortedlist = sortBy("default");
+		const filterArg = filterBtn.filterArg;
+		const filteredArr = sortedlist.filter((item) => item.city === filterArg);
+		cardWrapper.innerHTML = "";
+		buildCards(filteredArr);
 	} else {
+		// nei vienas nenuspaustas
 		cardWrapper.innerHTML = "";
 		buildCards(sortBy("default"));
 	}
 }
+
 function sortBy(sortingOption) {
 	const itemsToSort = itemsList;
 	switch (sortingOption) {
