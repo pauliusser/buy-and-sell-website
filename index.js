@@ -103,13 +103,18 @@ function redraw() {
 	}
 }
 
+// kad rusiavimas visada butu vienodas reikia visada is pradziu sugrazinti
+// sarasa i ta pacai default busena
+function defaultSort(list) {
+	return list.sort((a, b) => b.price - a.price);
+}
+
 function sortBy(sortingOption) {
-	const itemsToSort = itemsList;
+	const itemsToSort = defaultSort(itemsList);
 	switch (sortingOption) {
 		case "default":
-			const sortedByHighPrice = itemsToSort.sort((a, b) => b.price - a.price);
-			itemsList = sortedByHighPrice;
-			return sortedByHighPrice;
+			itemsList = itemsToSort;
+			return itemsToSort;
 		case "price":
 			const sortedByLowPrice = itemsToSort.sort((a, b) => a.price - b.price);
 			itemsList = sortedByLowPrice;
