@@ -151,8 +151,7 @@ function sortBy(sortingOption) {
 }
 
 async function buildCards(itmList) {
-	console.log("build");
-	itmList.forEach((item, index) => {
+	itmList.forEach((item) => {
 		const card = document.createElement("div");
 		card.classList.add("card");
 		card.addEventListener("click", () => {});
