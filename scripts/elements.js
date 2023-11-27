@@ -12,7 +12,7 @@ function buildHeader() {
                 <li>
                     <a href="./index.html">Stuff for sale</a>
                 </li>
-                <li><a href="./add item.html">Sel yours</a></li>
+                <li><a href="./addItem.html">Sel yours</a></li>
             </ul>
             <a class="wishlist-wrapper" href="./wishlist.html">
                 <svg id="wish-list" class="wish-list" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -32,7 +32,7 @@ function buildHeader() {
                         <a href="./index.html">Stuff for sale</a>
                     </li>
                     <li>
-                        <a href="./add item.html">Sel yours</a>
+                        <a href="./addItem.html">Sel yours</a>
                     </li>
                 </ul>
             </nav>
