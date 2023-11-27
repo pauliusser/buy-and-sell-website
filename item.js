@@ -1,6 +1,6 @@
-import { fetchItems, postItem, removeItem, fetchOneItem } from "./scripts/api.js";
+import { removeItem, fetchOneItem } from "./scripts/api.js";
 import { buildHeader, buildFooter, updateWishlistCounter } from "./scripts/elements.js";
-import { storeWishlist, readWishlist, clearWishlist, removeFromWishlist, addToWishlist } from "./scripts/localstorage.js";
+import { removeFromWishlist } from "./scripts/localstorage.js";
 const itemWrapper = document.getElementById("item-wrapper");
 
 buildHeader();

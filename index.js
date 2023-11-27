@@ -1,7 +1,7 @@
-import { fetchItems, postItem, removeItem, fetchOneItem } from "./scripts/api.js";
+import { fetchItems } from "./scripts/api.js";
 import { buildHeader, buildFooter, updateWishlistCounter } from "./scripts/elements.js";
-import { storeWishlist, readWishlist, clearWishlist, removeFromWishlist, addToWishlist } from "./scripts/localstorage.js";
-import Btn from "./scripts/btn class.js";
+import { readWishlist, removeFromWishlist, addToWishlist } from "./scripts/localstorage.js";
+import Btn from "./scripts/Btn.js";
 
 const cardWrapper = document.getElementById("card-wrapper");
 const vilniusBtnObj = document.getElementById("vilnius");
@@ -59,18 +59,6 @@ function buildFilteredBy(c) {
 	cardWrapper.innerHTML = "";
 	buildCards(filteredArr);
 }
-
-// function redraw() {
-// 	// patikrina ar sortinimas neliko nuspaustas, jei liko perpiesia sortinta, jei neliko perpiesia default
-// 	if (Btn.sortBtns.some((btn) => btn.isClicked === true)) {
-// 		const arg = Btn.sortBtns.find((btn) => btn.isClicked === true).filterArg;
-// 		cardWrapper.innerHTML = "";
-// 		buildCards(sortBy(arg));
-// 	} else {
-// 		cardWrapper.innerHTML = "";
-// 		buildCards(sortBy("default"));
-// 	}
-// }
 
 function redraw() {
 	const sortBtn = Btn.sortBtns.find((btn) => btn.isClicked === true); //jei nuspaustas randa nuspausta sortBtn

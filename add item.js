@@ -1,4 +1,3 @@
-import { fetchItems, postItem, removeItem, fetchOneItem } from "./scripts/api.js";
 import { buildHeader, buildFooter } from "./scripts/elements.js";
 
 buildHeader();

@@ -1,6 +1,6 @@
 import { buildHeader, buildFooter, updateWishlistCounter } from "./scripts/elements.js";
-import { storeWishlist, readWishlist, clearWishlist, removeFromWishlist, addToWishlist } from "./scripts/localstorage.js";
-import { fetchItems, postItem, removeItem, fetchOneItem } from "./scripts/api.js";
+import { readWishlist, clearWishlist, removeFromWishlist } from "./scripts/localstorage.js";
+import { fetchItems } from "./scripts/api.js";
 
 const clearListBtn = document.getElementById("clear-btn");
 const wishListWrapper = document.getElementById("wish-list-wrapper");
